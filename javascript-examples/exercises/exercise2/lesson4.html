@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      <a
+        id="w3r"
+        type="text/html"
+        hreflang="en-us"
+        rel="nofollow"
+        target="_self"
+        href="https://www.w3resource.com/"
+        >w3resource</a
+      >
+    </p>
+    <button onclick="getAttributes()">
+      Click here to get attributes value
+    </button>
+  </body>
+  <script>
+    function getAttributes() {
+      var href = document.getElementById ('w3r').href;
+      alert ('the value of the href attribute of the link this ' + href);
+      var hreflang = document.getElementById ('w3r').hreflang;
+      alert ('the value of the href attribute of the link this ' + hreflang);
+      var rel = document.getElementById ('w3r').rel;
+      alert ('the value of the href attribute of the link this ' + rel);
+      var target = document.getElementById ('w3r').target;
+      alert ('the value of the href attribute of the link this ' + target);
+      var type = document.getElementById ('w3r').type;
+      alert ('the value of the href attribute of the link this ' + type);
+    }
+  </script>
+</html>

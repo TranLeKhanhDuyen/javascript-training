@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style type="text/css">
+    body {
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <div>
+      <button id="jsstyle" onclick="display_random_image()">Show Image</button>
+    </div>
+  </body>
+  <script>
+    function display_random_image() {
+      var theImages = [
+        {
+          src: "https://i.pinimg.com/736x/f6/d2/e9/f6d2e9380539971ac25099f97b4997b1.jpg",
+          width: "240",
+          height: "426",
+        },
+        {
+          src: "https://i.pinimg.com/736x/b2/fb/af/b2fbafcec8b13d514eedfd8cc9fae3c1.jpg",
+          width: "240",
+          height: "426",
+        },
+        {
+          src: "https://i.pinimg.com/564x/b1/d7/98/b1d7985699392aa4252664a25367564b.jpg",
+          width: "240",
+          height: "426",
+        },
+      ];
+
+      var preBuffer = [];
+      for (var i = 0, j = theImages.length; i < j; i++) {
+        preBuffer[i] = new Image();
+        preBuffer[i].src = theImages[i].src;
+        preBuffer[i].width = theImages[i].width;
+        preBuffer[i].height = theImages[i].height;
+      }
+
+      //create random image.number
+      function getRandomInt(min, max) {
+        //return Math.floor(Math.random() * (max - min + 1)) + min;
+        imn = Math.floor(Math.random() * (max - min + 1)) + min;
+        return preBuffer[imn];
+      }
+      // 0 is first image, preBuffer.lenght -1 is last image
+      var newImage = getRandomInt(0, preBuffer.length - 1);
+      //remove the previous images
+      var images = document.getElementsByTagName('img');
+      var l = images.length;
+      for (var p = 0; p < l; p ++) {
+        images[0].parentNode.removeChild(images[0]);
+      }
+      //display the image
+      document.body.appendChild(newImage)
+    }
+  </script>
+</html>
