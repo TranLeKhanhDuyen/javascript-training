@@ -1,55 +1,58 @@
 .login {
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-alabaster);
   height: 100vh;
 }
+
 .login-box {
   text-align: center;
 }
+
 .login-heading {
   font-weight: var(--font-weight-light);
   font-size: var(--font-size-large);
-  color: var(--color-black);
+  color: var(--color-primary-login);
+  line-height: 27.6px;
 }
+
 .login-form {
   margin-top: 24px;
   padding: 24px;
   text-align: left;
   background-color: var(--color-while);
-  border-radius: var(--boder-radius-login-form);
+  border-radius: 4px;
 }
+
 .input-form {
   margin-bottom: 24px;
-  display: flex;
-  flex-direction: column;
 }
+
 .input-label {
   font-weight: var(--font-weight-light);
-  color: var(--color-black);
+  color: var(--color-primary-login);
   font-size: var(--font-size-small);
   line-height: 16.1px;
 }
+
 .input-login {
   margin-top: 8px;
   width: 272px;
   padding: 8px;
   border: 1px solid var(--color-gallery);
-  border-radius: 4px;
-  color: var(--color-black);
+  border-radius: var(--boder-radius-login-form);
+  color: var(--color-primary-login);
+  background-color: var(--color-login-input-background);
   outline: none;
 }
-.input-login::placeholder {
-  color: var(--color-black);
-}
+
 .login-button {
   width: 100%;
   padding: 8px;
-  background-color: var(--color-azure-radiance);
+  background-color: var(--color-login-button-background);
   color: var(--color-while);
   border: none;
-  border-radius: var(--boder-radius-login-form);
+  border-radius: 8px;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-largest);
   line-height: 18.4px;

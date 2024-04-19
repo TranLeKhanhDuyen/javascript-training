@@ -1,4 +1,9 @@
 :root {
+  /* start-login-page */
+  --color-primary-login: var(--color-cod-gray);
+  --color-login-input-background: var(--color-alabaster);
+  --color-login-button-background: var(--color-azure-radiance);
+  /* end-login-page */
   --color-cod-gray: #111111;
   --color-azure-radiance: #007AFF;
   --color-cornflower-blue: #4A85F6;
@@ -10,8 +15,8 @@
   --color-bali-hai: #8F9BB3;
   --color-alabaster: #F8F8F8;
   --color-gallery: #EEEEEE;
-  
-  --boder-radius-login-form: 8px;
+
+  --boder-radius-login-form: 4px;
 
   --font-size-smallest: 12px;
   --font-size-smaller: 13px;
