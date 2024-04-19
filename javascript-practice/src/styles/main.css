@@ -1,6 +1,8 @@
 @import "../styles/bases/index.css";
 @import "./utils/variables.css";
 @import "./components/index.css";
+@import "./pages/login.css";
+@import "./layouts/index.css";
 
 * {
     margin: 0;
