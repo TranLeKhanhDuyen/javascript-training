@@ -1,0 +1,5 @@
+.button {
+  border: none;
+  color: var(--color-while);
+  cursor: pointer;
+}

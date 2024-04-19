@@ -19,13 +19,10 @@
 .login-form {
   margin-top: 24px;
   padding: 24px;
+  width: 320px;
   text-align: left;
   background-color: var(--color-while);
   border-radius: 4px;
-}
-
-.input-form {
-  margin-bottom: 24px;
 }
 
 .input-label {
@@ -36,22 +33,24 @@
 }
 
 .input-login {
-  margin-top: 8px;
-  width: 272px;
+  margin: 8px 0 24px 0;
+  width: 100%;
   padding: 8px;
   border: 1px solid var(--color-gallery);
   border-radius: var(--boder-radius-login-form);
   color: var(--color-primary-login);
-  background-color: var(--color-login-input-background);
+  background-color: var(--color-alabaster);
   outline: none;
+}
+
+.input-login::placeholder {
+  color: var(--color-primary-login);
 }
 
 .login-button {
   width: 100%;
   padding: 8px;
-  background-color: var(--color-login-button-background);
-  color: var(--color-while);
-  border: none;
+  background-color: var(--color-azure-radiance);
   border-radius: 8px;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-largest);
