@@ -36,7 +36,7 @@
   margin: 8px 0 24px 0;
   width: 100%;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: var(--boder-radius-login-input);
   color: var(--color-primary-login);
   background-color: var(--color-alabaster);
 }

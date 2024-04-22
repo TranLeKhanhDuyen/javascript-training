@@ -3,7 +3,6 @@
   color: var(--color-while);
   cursor: pointer;
   background-color: var(--color-azure-radiance);
-  padding: 5px 0;
-  width: 111px;
+  padding: 5px 15px;
   border-radius: var(--boder-radius-input-button);
 }
