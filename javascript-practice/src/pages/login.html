@@ -10,14 +10,17 @@
     <article class="login flex">
       <div class="login-box">
         <h1 class="login-heading">Login</h1>
-        <form class="login-form">
+        <form id="login-form">
             <label class="input-label" for="email">Email</label>
             <input class="input-login input" type="email" name="email" placeholder="example@email.com" id="email" />
+            <span id="input-login-error"></span>
             <label class="input-label" for="password">Password</label>
-            <input class="input-login input" type="password" name="password" id="password">
-            <button class="login-button button">Login</button>
+            <input class="input-login input" type="password" name="password" placeholder="enter password" id="password">
+            <span id="input-login-error"></span>
+            <button class="login-button button" type="submit">Login</button>
         </form>
       </div>
     </article>
   </body>
+  <script type="module" src="../js/main.js"></script>
 </html>
