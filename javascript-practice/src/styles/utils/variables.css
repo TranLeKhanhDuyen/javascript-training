@@ -3,7 +3,7 @@
   --color-primary-login: var(--color-cod-gray);
   /* end-login-page */
   --color-cod-gray: #111111;
-  --color-azure-radiance: #007AFF;
+  --color-azure-radiance: #0095FF;
   --color-cornflower-blue: #4A85F6;
   --color-boulder: #757575;
   --color-black: #0A0A0A;
@@ -12,9 +12,9 @@
   --color-while: #FFFFFF;
   --color-bali-hai: #8F9BB3;
   --color-alabaster: #F8F8F8;
-  --color-gallery: #EEEEEE;
+  --color-gallery: #EFF4FA;
 
-  --boder-radius-login-form: 4px;
+  --boder-radius-input-button: 8px;
 
   --font-size-smallest: 12px;
   --font-size-smaller: 13px;

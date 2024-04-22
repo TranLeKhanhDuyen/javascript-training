@@ -2,4 +2,8 @@
   border: none;
   color: var(--color-while);
   cursor: pointer;
+  background-color: var(--color-azure-radiance);
+  padding: 5px 0;
+  width: 111px;
+  border-radius: var(--boder-radius-input-button);
 }
