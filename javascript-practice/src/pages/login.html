@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css" />
     <title>Login</title>
   </head>
   <body>
@@ -11,16 +11,50 @@
       <div class="login-box">
         <h1 class="login-heading">Login</h1>
         <form id="login-form">
-            <label class="input-label" for="email">Email</label>
-            <input class="input-login input" type="email" name="email" placeholder="example@email.com" id="email" />
-            <span id="input-login-error"></span>
-            <label class="input-label" for="password">Password</label>
-            <input class="input-login input" type="password" name="password" placeholder="enter password" id="password">
-            <span id="input-login-error"></span>
-            <button class="login-button button" type="submit">Login</button>
+          <label class="input-label" for="email">Email</label>
+          <input
+            class="input-login input"
+            type="email"
+            name="email"
+            placeholder="example@email.com"
+            id="email"
+          />
+          <label class="input-label" for="password">Password</label>
+          <input
+            class="input-login input"
+            type="password"
+            name="password"
+            placeholder="enter password"
+            id="password"
+          />
+          <button class="login-button button" type="submit">Login</button>
         </form>
       </div>
     </article>
   </body>
   <script type="module" src="../js/main.js"></script>
+  <script>
+    export default class UserView {
+  constructor() {
+    this.emailData = document.getElementById('email')
+    this.passwordData = document.getElementById('password')
+    this.loginFormData = document.getElementById('form-login')
+  }
+
+  Submit(handler) {
+    SubmitEvent(this.loginFormData, "submit", this.Login(handler));
+  }
+
+  Login(handler) {
+    return function(event) {
+      event.prevenDefault();
+      const emailData = document.getElementById('email')
+      const passwordData = document.getElementById('password')
+      handler(emailData.value, passwordData.value)
+      console.log(emailData);
+      console.log(passwordData);
+    }
+  }
+}
+  </script>
 </html>
